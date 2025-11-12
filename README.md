@@ -44,3 +44,11 @@ python clustering.py
   - Elbow plot for K-Means.
   - Scatter plots for clusters.
   - Dendrogram for Ward's method.
+  
+
+### 3. Clustering Visualization, Optimization and Explanation
+Using the `pipeline.ipynb` to perform visualization, optimization and explain the cluster main feature in one pipeline. Using the data preprocessed form `data.py` and the methos from `clustering.py`.
+
+- Visualization: Apply PCA and t-SNE for dimensionality reduction (reducing data to 2D), then visualize the data in its original form and after clustering with K-means.
+- Optimization: Adopt hyperparameter search to find the optimal hyperparameters for K-means and Ward's method.
+- Explanation: Identify prominent attributes of data within each cluster to assign human-readable labels.
