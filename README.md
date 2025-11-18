@@ -52,3 +52,46 @@ Using the `pipeline.ipynb` to perform visualization, optimization and explain th
 - Visualization: Apply PCA and t-SNE for dimensionality reduction (reducing data to 2D), then visualize the data in its original form and after clustering with K-means.
 - Optimization: Adopt hyperparameter search to find the optimal hyperparameters for K-means and Ward's method.
 - Explanation: Identify prominent attributes of data within each cluster to assign human-readable labels.
+
+### 4. Comprehensive Clustering Comparison (`clustering_comparison.ipynb`)
+Advanced analysis notebook comparing three clustering algorithms:
+
+```bash
+jupyter notebook clustering_comparison.ipynb
+```
+
+**Features:**
+- Implements DBSCAN, Agglomerative, and Divisive Clustering
+- Compares using internal metrics (Silhouette, Davies-Bouldin, Calinski-Harabasz)
+- Stability analysis with different random seeds
+- Detailed cluster interpretation and profiling
+- Business recommendations for each cluster
+
+### 5. Interactive Web Application
+
+An interactive React web app for real-time cluster exploration and prediction.
+
+
+#### Manual Start
+**Terminal 1 - Backend:**
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+
+**Terminal 2 - Frontend:**
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Open **http://localhost:3000**
+
+#### Features
+- 🎯 Choose from 3 clustering algorithms
+- 📝 Input customer profile (age, income, spending score)
+- 🔮 Get instant cluster prediction
+- 📊 View cluster visualization and statistics
+- 🎨 Beautiful, responsive interface
