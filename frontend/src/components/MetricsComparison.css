@@ -1,0 +1,111 @@
+.metrics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.metrics-empty {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+  font-style: italic;
+}
+
+.metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+
+.metrics-table thead {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.metrics-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.5px;
+}
+
+.metrics-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.2s ease;
+}
+
+.metrics-table tbody tr:hover {
+  background: #f5f5f5;
+}
+
+.metrics-table td {
+  padding: 12px 15px;
+}
+
+.cluster-id-cell {
+  font-weight: 700;
+  color: #667eea;
+  min-width: 50px;
+}
+
+.size-cell,
+.percentage-cell {
+  font-weight: 600;
+  color: #333;
+}
+
+.metric-cell {
+  color: #666;
+  text-align: center;
+}
+
+.cluster-distribution {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cluster-distribution h4 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.distribution-bars {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 15px;
+  min-height: 150px;
+  padding: 20px 10px 0;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.bar {
+  width: 100%;
+  min-width: 40px;
+  background: linear-gradient(to top, #667eea, #764ba2);
+  border-radius: 4px 4px 0 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 20px;
+}
+
+.bar:hover {
+  transform: scaleY(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bar-label {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #666;
+}

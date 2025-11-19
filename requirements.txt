@@ -1,0 +1,24 @@
+# Core Data Science & Machine Learning
+pandas
+numpy
+scikit-learn
+scipy
+
+# Visualization
+matplotlib
+seaborn
+
+# Jupyter & Notebooks
+jupyter
+notebook
+ipykernel
+
+# Web Framework
+Flask
+Flask-CORS
+
+# Data Serialization
+joblib
+
+# Development & Utilities
+python-dotenv

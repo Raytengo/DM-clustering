@@ -1,0 +1,52 @@
+.visualization-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.cluster-canvas {
+  width: 100%;
+  height: auto;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.cluster-canvas:hover {
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.2);
+}
+
+.algorithm-label {
+  font-size: 0.95em;
+  color: #666;
+  font-style: italic;
+  margin: 0;
+}
+
+.prediction-indicator {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 0;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  animation: pulse 2s infinite;
+}
+
+.prediction-indicator strong {
+  font-size: 1.1em;
+  margin-left: 5px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
